@@ -1,8 +1,8 @@
-const express = require('express');
+import express from "express";
 const app = express();
 
-app.get('/saludo', (req, res) => {
-  res.json({ mensaje: 'Hola mundo desde Node.js + CI!' });
+app.get("/", (req, res) => {
+  res.send("Hello CI");
 });
 
-module.exports = app;
+export default app;

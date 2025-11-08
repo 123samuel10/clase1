@@ -1,15 +1,11 @@
 {
   "name": "mini-node-ci",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
- 
-     "test": "jest"
+    "test": "jest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
     "express": "^5.1.0"
   },

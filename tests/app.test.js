@@ -1,10 +1,7 @@
-const request = require('supertest');
-const app = require('../app');
+import request from "supertest";
+import app from "../app.js";
 
-describe('Prueba del endpoint /saludo', () => {
-  test('Debe responder con un mensaje JSON', async () => {
-    const response = await request(app).get('/saludo');
-    expect(response.statusCode).toBe(200);
-    expect(response.body.mensaje).toBe('Hola mundo desde Node.js + CI!');
-  });
+test("GET / returns 200", async () => {
+  const response = await request(app).get("/");
+  expect(response.statusCode).toBe(200);
 });
